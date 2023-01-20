@@ -96,7 +96,7 @@ header ul li:first-of-type a:first-of-type{
 .header-bottom .menu-centro ul li a:hover{
     background-color: rgba(90, 90, 90, .1);
     transform: scale(1.2);
-    transition-delay: .7s;
+    transition-delay: .5s;
     padding: 10px;
     border-radius: 10px;
     font-weight: 900;
