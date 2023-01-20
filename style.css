@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+/****** GLOBALE ******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/****** HEADER ******/
+
+header{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 60px;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+header p{
+    margin-top: 20px;
+    font-size: 22px;
+    color: rgb(141, 140, 148);
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    padding-right:20px;
+}
+
+header ul li a{
+    color: rgba(204, 62, 119, 0.8);
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 100%;
+    font-size: 19px;
+}
+
+header ul li:first-of-type a:first-of-type{
+    color: rgb(141, 140, 148);
+    font-weight: 900;
+    cursor: default;
+    font-size: 20px;
+}
+
+/****** HEADER BOTTO ******/
+
+.header-bottom{
+    height: 7%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/****** HEADER CENTRO ******/
+
+.header-bottom .menu-centro ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+.header-bottom .menu-centro ul li {
+    padding-right: 45px;
+    list-style: none;
+}
+
+.header-bottom .menu-centro ul li a {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(141, 140, 148);
+    transition: .3;
+    transition-delay: 0;
+}
+
+.header-bottom .menu-centro ul li a:hover{
+    background-color: rgba(90, 90, 90, .1);
+    transform: scale(1.2);
+    transition-delay: .7s;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    color: black;
+}
+
+/****** BOTTONE SX ******/
+
+.bottone-sx{
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px 0 0 20px;
+    text-align: left;
+    border: 6px solid rgba(255, 192, 203, 0.3);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+/****** BOTTONE DX ******/
+
+.bottone-dx{
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid rgba(90, 90, 90, 0.3);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/****** MAIN ******/
+
+main{
+    height: 78%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 10px 0;
+    flex-wrap: wrap;
+}
+
+/****** CARD ******/
+
+.card{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+/****** CARD IMG ******/
+
+.card img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/****** ICONE ******/
+
+.icone{
+    z-index: 9;
+    color: rgba(99, 99, 99, 0.5);
+    position: absolute;
+    top: 12px;
+    left: 340px;
+    font-size:40px;
+    border-radius: 10px;
+    padding: 3px;
+    transform: scale(0);
+    transition: transform .4s;
+    cursor: pointer;
+    transition-delay: 0;
+}
+
+.fa-arrow-up-right-from-square{
+    font-size: 30px;
+    padding: 0 0 10px 10px;
+    color: black;
+
+}
+
+.card:hover .icone{
+    transform: scale(.8);
+    transition-delay: .5s;
+    opacity: 8;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 340px;
+}
+
+/****** BORDO SCURO ******/
+
+.scuro {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transform: scale(0);
+    transition: transform .4s;
+    transition-delay: 0;
+}
+
+.card:hover .scuro{
+    transform: scale(1);
+    transition-delay: .5s;
+}
+
+/****** BOX BOTTOM ******/
+
+.box-bottom{
+    display: flex;
+    width: 400px;
+    height: 50px;
+    margin: 10px 0 50px;
+    justify-content: space-between;
+}
+
+/****** BOX SX ******/
+
+.box-sx{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.pro{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(90, 90, 90, 0.2);
+    line-height: 21px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.box-sx h5{
+    font-size: 15px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 20px;
+}
+
+/****** BOX DX ******/
+
+.box-dx{
+    display: flex;
+    line-height: 50px;
+}
+
+
+.heart, .eye{
+    color:rgba(90, 90, 90, 0.3);
+    margin: 10px 3px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.heart:hover{
+    color: red;
+}
+
+
+.eye:hover{
+    color: aqua;
+}
+
+.box-dx p:first-of-type{
+    margin-right: 10px;
+}
+
+
+.container-card:nth-child(7) .box-dx p{
+    color: rgba(90, 90, 90, .5);
+    font-size: 16px;
+}
